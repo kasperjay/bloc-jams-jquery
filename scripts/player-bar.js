@@ -25,5 +25,28 @@
 
     const previousSong = album.songs[previousSongIndex];
     player.playPause(previousSong);
-});
+   });
+
+    $('#time-control input').on('input', function (event) {
+      player.skipTo(event.target.value);
+    });
+
+    setInterval( () => {
+      if (player.playState !== 'playing') { return; }
+      const currentTime = player.getTime();
+      const duration = player.getDuration();
+      const percent = (currentTime / duration) * 100;
+      $('#time-control .current-time').text( currentTime );
+      $('#time-control input').val(percent);
+    }, 1000);
+
+    function secondsTimeSpanToHMS(s) {
+    var h = Math.floor(s/3600); //Get whole hours
+    s -= h*3600;
+    var m = Math.floor(s/60); //Get remaining minutes
+    s -= m*60;
+    return h+":"+(m < 10 ? '0'+m : m)+":"+(s < 10 ? '0'+s : s); //zero padding on minutes and seconds
+}
+
+secondsTimeSpanToHMS(currentTime);
 }
