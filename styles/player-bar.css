@@ -39,16 +39,19 @@
   color: hsla(0, 0%, 100%, 1);
 }
 
-#play-pause .ion-pause:before {
+#play-pause .ion-pause {
   display: none;
+  content: "\f425";
+  font-family: 'Ionicons';
 }
 
-#play-pause[playState="playing"] .ion-pause:before {
+#play-pause[playState="playing"] .ion-pause {
   display: block;
 }
 
-#play-pause[playState="playing"] .ion-play:before {
+#play-pause[playState="playing"] .ion-play {
   display: none;
+  content: \f488
 }
 
 #time-control input {
