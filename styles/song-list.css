@@ -5,7 +5,6 @@
   margin-top: 3rem;
   overflow: hidden;
   width: 100%;
-  color: white;
 }
 
 #song-number-column {
@@ -16,7 +15,7 @@
 }
 
 tr {
-  border-bottom: 1px solid hsla(0, 0%, 100%, 0.1);
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.3);
   background: hsla(0, 0%, 0%, 0.01);
   transition: all 0.2s ease;
 }
@@ -29,7 +28,7 @@ tr:hover .ion-play,
 tr.playing .ion-pause,
 tr.paused .ion-play {
   display: block;
-  color: white;
+  color: #4786A2;
 }
 
 tr .ion-play,
@@ -61,12 +60,6 @@ tr:last-child {
 
 td.song-title {
   padding: 0.75rem;
-  color: white;
-}
-
-td.song-title:focus {
-  padding: 0.75rem;
-hsl(268, 100%, 30%);
 }
 
 td.current-time  {
@@ -76,7 +69,6 @@ td.current-time  {
 
 td.total-time  {
   padding: 0.75rem;
-  color: #4786A2;
 }
 
 tr button {
@@ -112,10 +104,17 @@ tr.playing button:focus .ion-pause {
 }
 
 .song-title {
-  color: hsl(268, 100%, 30%);
+  hsla(268, 100%, 42%, 1);
 }
 
 .song-duration {
   color: #4786A2;
   text-align: right;
+}
+
+.album-details {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
