@@ -1,15 +1,18 @@
 html {
-  font-size: 16px;
+  font-size: 24px;
 }
 
 body {
-  background-image: url(../assets/images/blurred_backgrounds/purple_bg.png);
+  background-image:
+      linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(../assets/images/blurred_backgrounds/purple_bg.png);url(../assets/images/blurred_backgrounds/purple_bg.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center center;
+  background-position: relative;
   background-size: cover;
-  color: white;
-  font-family: 'Open Sans', sans-serif;
+  overflow: hidden;
+  color: hsl(268, 100%, 30%);
+  font-family: 'Roboto', sans-serif;
 }
 
 nav {
@@ -25,12 +28,15 @@ main {
   width: 100%;
   max-width: 800px;
   margin: 4rem auto 150px;
-  padding: 0 1rem;
+  padding: 1rem 1rem;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
 }
 
 #album-info {
-  overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+  color: hsl(268, 100%, 30%);
 }
 
 #album-cover-art {
@@ -42,18 +48,24 @@ main {
 }
 
 #album-title {
-  font-size: 2.5rem;
+  font-size: 30px;
   margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color: #4786A2;
 }
 
 h2.artist {
-  font-weight: 100;
-  font-size: 1.4rem;
+  font-size: 70px;
   margin: 0.5rem;
-  opacity: 0.9;
+  font-family: 'Overpass Mono', monospace;
+  text-transform: uppercase;
+  color: hsl(268, 100%, 30%);
 }
 
 #release-info {
-  opacity: 0.5;
-  font-size: 0.8rem;
+  margin: 0.5rem;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  color: #4786A2;
+
 }

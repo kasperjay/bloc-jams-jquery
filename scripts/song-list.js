@@ -1,15 +1,15 @@
 album.songs.forEach( (song, index) => {
     song.element = $(`
       <tr>
-        <td>
+        <td class='number-icon'>
         <button>
           <span class="song-number">${index + 1}</span>
           <span class="ion-play"></span>
           <span class="ion-pause"></span>
         </button>
       </td>
-      <td>${song.title}</td>
-      <td>${player.prettyTime(song.duration)}</td>
+      <td class='song-title'>${song.title}</td>
+      <td class='total-time'>${player.prettyTime(song.duration)}</td>
       </tr>
     `);
 

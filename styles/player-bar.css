@@ -17,19 +17,19 @@
   background: none;
   color: #8121e0;
   font-size: 1.2rem;
-  color: hsl(278,68%,32%);
+  color: hsl(268, 100%, 30%);
   transition: all 0.2s ease;
   cursor: pointer;
 }
 
 #buttons button:hover, #buttons button:focus {
   outline: none;
-  color: hsla(0, 0%, 100%, 1);
+  color: #4786A2;
   text-shadow: 2px 4px 3px hsla(0,0%,0%,0.25);
 }
 
 #buttons #play-pause {
-  color: hsl(284,76%,33%);
+  color: hsl(268, 100%, 30%);
   font-size: 2rem;
   margin: 0.5rem 1rem 0;
   transform: translateY(0.3rem);
@@ -65,7 +65,7 @@
 #time-control div,
 #volume-control div {
   font-size: 0.8rem;
-  color: hsla(0, 0%, 100%, 0.4);
+  color:  #4786A2;
   width: 35px;
   display: block;
   float: left;
@@ -104,7 +104,7 @@ input[type=range]::-webkit-slider-runnable-track {
   height: 3px;
   cursor: pointer;
   box-shadow: 0px 0px 0px rgba(57, 0, 0, 0), 0px 0px 0px rgba(83, 0, 0, 0);
-  background: hsl(282, 35%, 25%);
+  background: #4786A2;
   border-radius: 3.4px;
   border: 0.2px solid rgba(1, 1, 1, 0);
 }
@@ -113,19 +113,20 @@ input[type=range]::-webkit-slider-thumb {
   height: 13px;
   width: 13px;
   border-radius: 50%;
-  background: hsla(289, 48%, 85%, 0.5);
+  background: white;
   cursor: pointer;
   -webkit-appearance: none;
   margin-top: -6.5px;
 }
+
 input[type=range]:focus::-webkit-slider-runnable-track {
-  background: hsl(282, 35%, 25%);
+  background: #4786A2;
 }
 input[type=range]::-moz-range-track {
   width: 100%;
   height: 0.8px;
   cursor: pointer;
-  background: hsl(282, 35%, 25%);
+  background: #4786A2;
   border-radius: 3.4px;
   border: 0.2px solid rgba(1, 1, 1, 0);
 }
