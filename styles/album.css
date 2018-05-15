@@ -10,7 +10,7 @@ body {
   background-size: cover;
   overflow: hidden;
   color: hsl(268, 100%, 30%);
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Nanum Gothic', sans-serif;
 }
 
 nav {
@@ -30,15 +30,14 @@ main {
   box-sizing: border-box;
   border-radius:5%;
   color: hsla(268, 100%, 42%, 1);
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Nanum Gothic', sans-serif;
   font-size: 28px;
   background-color: hsla(0, 0%, 0%, 0.58);
 }
 
 #album-info {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Nanum Gothic', sans-serif;
   color: hsl(268, 100%, 30%);
-  te
 }
 
 #album-cover-art {
@@ -51,15 +50,16 @@ main {
 
 #album-title {
   font-size: 30px;
-  margin: 15px;;
-  font-family: 'Roboto', sans-serif;
+  margin: 15px;
+  font-family: 'Handlee', sans-serif;
+  text-transform: uppercase;
   color: #4786A2;
 }
 
 h2.artist {
   font-size: 70px;
   margin: 0.5rem;
-  font-family: 'Overpass Mono', monospace;
+  font-family: 'Handlee', cursive;
   text-transform: uppercase;
   color: hsla(268, 100%, 42%, 1);
 }
@@ -67,7 +67,6 @@ h2.artist {
 #release-info {
   margin: 10px;
   font-size: 18px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Nanum Gothic', sans-serif;
   color: #4786A2;
-
 }
